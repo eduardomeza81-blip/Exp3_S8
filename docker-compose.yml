@@ -10,7 +10,7 @@ services:
       - spring.datasource.url=jdbc:oracle:thin:@a8qye6ta3deuch8t_tp?TNS_ADMIN=/app/wallet
       - spring.datasource.username=DSY2201_S4
       - spring.datasource.password=ActForm.S4_BDY
-      - TNS_ADMIN=/app/wallet    # extra (además del JAVA_TOOL_OPTIONS del Dockerfile)
+      - TNS_ADMIN=/app/wallet  
       volumes:
       - "C:/Ingenieria/DSY2201/Exp3_S8/Exp3_S8/Wallet:/app/wallet:ro"    
       restart: always
