@@ -19,9 +19,10 @@ mvn spring-boot:run
 docker compose config
 
 # Recrea desde cero
+```bash
 docker compose down -v
 docker compose up --build -d
-
+```
 > Para  **Oracle ADB con Wallet**, montar el wallet a `/app/wallet` o cópialo dentro de la imagen (ver comentarios en `Dockerfile`).
 
 ## Postman
