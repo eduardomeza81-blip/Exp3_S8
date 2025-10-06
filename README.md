@@ -25,8 +25,16 @@ docker compose up --build -d
 ```
 > Para  **Oracle ADB con Wallet**, montar el wallet a `/app/wallet` o cópialo dentro de la imagen (ver comentarios en `Dockerfile`).
 
+## Para subir a github
+```bash
+git init
+git branch -M main
+git remote add origin https://github.com/eduardomeza81-blip/EXP3_S8.git
+git add .
+git commit -m "chore: primer commit limpio"
+git push -u origin main
+```
 ## Postman
-
 Importa `Exp3_S8.postman_collection.json` y prueba:
 - `GET /students`
 - `GET /students/{id}`
