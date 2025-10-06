@@ -1,11 +1,11 @@
 # Entrega Semana 8 – DSY2201 (Exp3_S8)
 
 Proyecto consolida lo exigido por la guía de la Experiencia 2 semana 8:
-- **Spring Boot** (tu proyecto original)
-- **Documentación HATEOAS** (ya presente en tus controladores)
+- **Spring Boot** (proyecto original)
+- **Documentación HATEOAS** (presente   controladores)
 - **Pruebas unitarias JUnit** (≥2)
 - **Contenedorización** con `Dockerfile` para despliegue en docker descktop
-- **Colección Postman** para evidencias
+- **Colección Postman**  evidencias de funcionamiento
 
 ## Ejecución local
 
@@ -15,21 +15,12 @@ mvn spring-boot:run
 ```
 
 ## Docker
+# Valida que el YAML esté OK
+docker compose config
 
-1. Empaquetar:
-```bash
-mvn -DskipTests package
-```
-
-2. Construir imagen:
-```bash
-docker build -t exp3_s8:latest .
-```
-
-3. Ejecutar contenedor (usando `.env`):
-```bash
-docker run --rm -p 8080:8080 --env-file .env exp3_s8:latest
-```
+# Recrea desde cero
+docker compose down -v
+docker compose up --build -d
 
 > Para  **Oracle ADB con Wallet**, montar el wallet a `/app/wallet` o cópialo dentro de la imagen (ver comentarios en `Dockerfile`).
 
