@@ -1,0 +1,9 @@
+target/
+.git/
+.gitignore
+.idea/
+.vscode/
+*.iml
+*.log
+# If you are mounting the wallet with compose, keep it out of the image context
+wallet/

@@ -1,0 +1,103 @@
+{
+  "info": {
+    "name": "Exp3_S8 – Microservicio (DSY2201)",
+    "_postman_id": "c7f1b1f0-0d1a-4b6a-9d5e-6a4e0c0d1e2f",
+    "description": "Colección de endpoints para evidencias (HATEOAS + JUnit). Ajusta rutas según tu API real.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /students",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/students",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "students"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /students/{id}",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/students/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "students",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /students/ganancias/dia",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/students/ganancias/dia?fecha=2025-09-20",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "students",
+            "ganancias",
+            "dia"
+          ],
+          "query": [
+            {
+              "key": "fecha",
+              "value": "2025-09-20"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "GET /students/ganancias/diarias",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/students/ganancias/diarias?desde=2025-09-20&hasta=2025-09-30",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "students",
+            "ganancias",
+            "diarias"
+          ],
+          "query": [
+            {
+              "key": "desde",
+              "value": "2025-09-20"
+            },
+            {
+              "key": "hasta",
+              "value": "2025-09-30"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
