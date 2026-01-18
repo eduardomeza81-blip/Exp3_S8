@@ -56,8 +56,7 @@ fun MinutaScreen(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(16.dp)
-        ) {
-            Text("Minuta semanal", style = MaterialTheme.typography.headlineSmall)
+        ) { Text("Panel de lectura y comunicación", style = MaterialTheme.typography.headlineSmall)
             Spacer(modifier = Modifier.height(12.dp))
 
             LazyVerticalGrid(
@@ -86,12 +85,9 @@ private fun RecetaCard(receta: Receta) {
     Card(modifier = Modifier.fillMaxWidth()) {
         Column(modifier = Modifier.padding(12.dp)) {
             Text(receta.dia, style = MaterialTheme.typography.titleMedium)
-            Text(receta.nombre, style = MaterialTheme.typography.bodyLarge)
+            //Text(receta.nombre, style = MaterialTheme.typography.bodyLarge)
             Spacer(modifier = Modifier.height(6.dp))
-            Text(
-                receta.recomendacion,
-                style = MaterialTheme.typography.bodyMedium
-            )
+            //Text(receta.recomendacion, style = MaterialTheme.typography.bodyMedium)
             Spacer(modifier = Modifier.height(8.dp))
             Button(onClick = { /* acción simple */ }, modifier = Modifier.fillMaxWidth()) {
                 Text("Seleccionar")

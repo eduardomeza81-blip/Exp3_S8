@@ -28,9 +28,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.minutanutricional.R
-
+import com.example.minutanutricional.data.UsuariosData
+import com.example.minutanutricional.model.Usuario
 
 @Composable
 fun RegistroScreen(
@@ -42,7 +45,7 @@ fun RegistroScreen(
     var password by remember { mutableStateOf("") }
 
     // ComboBox (Dropdown)
-    val objetivos = listOf("Bajar peso", "Mantener", "Subir masa")
+    val objetivos = listOf("Lectura de textos", "Escritura asistida", "Comunicación básica")
     var expanded by remember { mutableStateOf(false) }
     var objetivoSeleccionado by remember { mutableStateOf(objetivos.first()) }
 
@@ -52,7 +55,7 @@ fun RegistroScreen(
     var vegetariano by remember { mutableStateOf(false) }
 
     // Radio buttons
-    val niveles = listOf("Baja", "Media", "Alta")
+    val niveles = listOf("Bajo", "Medio", "Alto")
     var nivelActividad by remember { mutableStateOf(niveles.first()) }
 
 /*    Column(
@@ -78,7 +81,7 @@ fun RegistroScreen(
             verticalArrangement = Arrangement.Top
         )
         {
-            Text("Registro de usuario", style = MaterialTheme.typography.headlineSmall)
+            Text("Registro de usuario accesible", style = MaterialTheme.typography.headlineSmall)
             Spacer(modifier = Modifier.height(12.dp))
 
             OutlinedTextField(
@@ -108,16 +111,16 @@ fun RegistroScreen(
             )
 
             Spacer(modifier = Modifier.height(12.dp))
-            Text("Objetivo nutricional (ComboBox)", style = MaterialTheme.typography.titleMedium)
+            Text("Accesibilidad", style = MaterialTheme.typography.titleMedium)
             Spacer(modifier = Modifier.height(6.dp))
 
-            // IMPORTANTE: Box para anclar el Dropdown y evitar errores/posición rara
             Box(modifier = Modifier.fillMaxWidth()) {
                 OutlinedTextField(
                     value = objetivoSeleccionado,
                     onValueChange = {},
                     readOnly = true,
-                    label = { Text("Objetivo") },
+                    label = { Text("Seleccione el uso",
+                        fontSize = 18.sp, fontWeight = FontWeight.Medium) },
                     modifier = Modifier
                         .fillMaxWidth()
                         .clickable { expanded = true },
@@ -142,23 +145,23 @@ fun RegistroScreen(
             }
 
             Spacer(modifier = Modifier.height(12.dp))
-            Text("Preferencias (CheckList)", style = MaterialTheme.typography.titleMedium)
+            Text("Preferencias", style = MaterialTheme.typography.titleMedium)
 
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Checkbox(checked = sinAzucar, onCheckedChange = { sinAzucar = it })
-                Text("Sin azúcar")
+                Text("Alto contraste")
             }
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Checkbox(checked = sinLactosa, onCheckedChange = { sinLactosa = it })
-                Text("Sin lactosa")
+                Text("Texto grande")
             }
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Checkbox(checked = vegetariano, onCheckedChange = { vegetariano = it })
-                Text("Vegetariano")
+                Text("Interfaz simplicada")
             }
 
             Spacer(modifier = Modifier.height(12.dp))
-            Text("Nivel de actividad (Radio Buttons)", style = MaterialTheme.typography.titleMedium)
+            Text("Nivel de asistencia", style = MaterialTheme.typography.titleMedium)
 
             niveles.forEach { nivel ->
                 Row(verticalAlignment = Alignment.CenterVertically) {
@@ -171,9 +174,19 @@ fun RegistroScreen(
             }
 
             Spacer(modifier = Modifier.height(16.dp))
-            Button(onClick = onCrearCuenta, modifier = Modifier.fillMaxWidth()) {
+           // Button(onClick = onCrearCuenta, modifier = Modifier.fillMaxWidth()) {
+           //     Text("Crear cuenta")
+           // }
+            Button(
+                onClick = {
+                    UsuariosData.agregarUsuario(Usuario(correo = email, password=password))
+                    onCrearCuenta()
+                },
+                modifier = Modifier.fillMaxWidth()
+            ) {
                 Text("Crear cuenta")
             }
+
             Spacer(modifier = Modifier.height(8.dp))
             Button(onClick = onBack, modifier = Modifier.fillMaxWidth()) {
                 Text("Volver a Login")

@@ -1,26 +1,26 @@
 [
     {
-        "merged": "C:\\Users\\emeza\\.gradle\\daemon\\8.7\\com.example.minutanutricional.app-debug-4:\\drawable_portada.jpg.flat",
-        "source": "C:\\Users\\emeza\\.gradle\\daemon\\8.7\\com.example.minutanutricional.app-main-6:\\drawable\\portada.jpg"
+        "merged": "com.example.minutanutricional.app-debug-4:/drawable_portada1.jpg.flat",
+        "source": "com.example.minutanutricional.app-main-6:/drawable/portada1.jpg"
     },
     {
-        "merged": "C:\\Users\\emeza\\.gradle\\daemon\\8.7\\com.example.minutanutricional.app-debug-4:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\emeza\\.gradle\\daemon\\8.7\\com.example.minutanutricional.app-main-6:\\drawable\\ic_launcher_background.xml"
+        "merged": "com.example.minutanutricional.app-debug-4:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.minutanutricional.app-main-6:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\emeza\\.gradle\\daemon\\8.7\\com.example.minutanutricional.app-debug-4:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\emeza\\.gradle\\daemon\\8.7\\com.example.minutanutricional.app-main-6:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "com.example.minutanutricional.app-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.minutanutricional.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\emeza\\.gradle\\daemon\\8.7\\com.example.minutanutricional.app-debug-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\emeza\\.gradle\\daemon\\8.7\\com.example.minutanutricional.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\emeza\\.gradle\\daemon\\8.7\\com.example.minutanutricional.app-debug-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\emeza\\.gradle\\daemon\\8.7\\com.example.minutanutricional.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "com.example.minutanutricional.app-debug-4:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.minutanutricional.app-main-6:/drawable/ic_launcher_foreground.xml"
     },
     {
         "merged": "com.example.minutanutricional.app-debug-4:/drawable_portada.jpg.flat",
         "source": "com.example.minutanutricional.app-main-6:/drawable/portada.jpg"
+    },
+    {
+        "merged": "com.example.minutanutricional.app-debug-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.minutanutricional.app-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
     }
 ]

@@ -16,18 +16,19 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import com.example.minutanutricional.R
+import com.example.minutanutricional.data.UsuariosData
+
 @Composable
 fun RecuperarScreen(
     onBack: () -> Unit
 ) {
-    val (email, setEmail) = remember { mutableStateOf("") }
-
+    val (correo, setCorreo) = remember { mutableStateOf("") }
+    val (mensaje, setMensaje) = remember { mutableStateOf("") }
     /*    Column(
         modifier = Modifier
             .fillMaxSize()
@@ -56,25 +57,33 @@ fun RecuperarScreen(
             Text("Recuperar contraseña", style = MaterialTheme.typography.headlineSmall)
             Spacer(modifier = Modifier.height(12.dp))
             OutlinedTextField(
-                value = email,
-                onValueChange = setEmail,
+                value = correo,
+                onValueChange = {setCorreo(it)},
                 modifier = Modifier.fillMaxWidth(),
                 label = { Text("Correo") },
                 singleLine = true
             )
             Spacer(modifier = Modifier.height(12.dp))
             Button(
-                onClick = { /* Simulación */ },
+                onClick = {
+                    val existe = UsuariosData.usuarios.any { it.correo == correo }
+                    if(existe){
+                        setMensaje("Se enviaron instrucciones de recupacion")
+                    }else{
+                        setMensaje("El correo no esta registrado")
+                    }
+                },
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text("Enviar recuperación")
+                Text("Recuperar")
             }
-            Spacer(modifier = Modifier.height(8.dp))
-            Button(
-                onClick = onBack,
-                modifier = Modifier.fillMaxWidth()
-            ) {
-                Text("Volver")
+            if(mensaje.isNotEmpty()){
+                Spacer(modifier = Modifier.height(12.dp))
+                Text(mensaje)
+            }
+            Spacer(modifier = Modifier.height(12.dp))
+            Button(onClick = onBack,modifier = Modifier.fillMaxWidth()){
+                Text("Volver a Login")
             }
         }
     }
