@@ -39,13 +39,6 @@ fun LoginScreen(
     val (password, setPassword) = remember { mutableStateOf("") }
     val (error, setError) = remember { mutableStateOf("") }
 
-    /*    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    )*/
     Box(
         modifier = Modifier.fillMaxSize()
     ) {
@@ -80,7 +73,11 @@ fun LoginScreen(
                 Column(modifier = Modifier.padding(16.dp)) {
                     OutlinedTextField(
                         value = email,
-                        onValueChange = setEmail,
+                        //onValueChange = setEmail,
+                        onValueChange = {
+                            setEmail(it)
+                            setError("")
+                        },
                         modifier = Modifier.fillMaxWidth(),
                         label = { Text("Correo") },
                         singleLine = true
@@ -88,7 +85,11 @@ fun LoginScreen(
                     Spacer(modifier = Modifier.height(12.dp))
                     OutlinedTextField(
                         value = password,
-                        onValueChange = setPassword,
+                        //onValueChange = setPassword,
+                        onValueChange = {
+                            setPassword(it)
+                            setError("")
+                        },
                         modifier = Modifier.fillMaxWidth(),
                         label = { Text("Contraseña") },
                         visualTransformation = PasswordVisualTransformation(),
@@ -104,12 +105,19 @@ fun LoginScreen(
                             text = error,
                             color = MaterialTheme.colorScheme.error
                         )
+                        Spacer(modifier =Modifier.height(8.dp))
                     }
                     Button(
                         onClick = {
-                            val ok = UsuariosData.validarUsuario(correo = email, password=password)
+                            val correoLimpio = email.trim()
+                            //val ok = UsuariosData.validarUsuario(correo = email, password=password)
+                            if (UsuariosData.cantidadUsuarios()==0){
+                                setError("Primero crea una cuenta en Registro.")
+                                return@Button
+                            }
+                            val ok = UsuariosData.validarUsuario(correo = correoLimpio, password=password)
                             if (ok){
-                                setError("Satisfactorio")
+                                setError("")
                                 onLogin()
                             }else{
                                 setError("Credenciales inválidas")

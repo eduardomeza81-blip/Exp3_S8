@@ -41,7 +41,7 @@ fun RecuperarScreen(
     ) {
 
         Image(
-            painter = painterResource(id = R.drawable.portada),
+            painter = painterResource(id = R.drawable.recuperar),
             contentDescription = null,
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
@@ -66,9 +66,13 @@ fun RecuperarScreen(
             Spacer(modifier = Modifier.height(12.dp))
             Button(
                 onClick = {
-                    val existe = UsuariosData.usuarios.any { it.correo == correo }
+                    if(correo.isBlank()) {
+                        setMensaje("Ingresa un correo.")
+                        return@Button
+                    }
+                    val existe = UsuariosData.existeCorreo(correo)
                     if(existe){
-                        setMensaje("Se enviaron instrucciones de recupacion")
+                        setMensaje("Se enviaron instrucciones de recupación")
                     }else{
                         setMensaje("El correo no esta registrado")
                     }

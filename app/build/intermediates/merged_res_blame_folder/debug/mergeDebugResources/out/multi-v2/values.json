@@ -40,6 +40,23 @@
                     }
                 },
                 {
+                    "source": "C:\\Ingenieria\\DSY2204\\Exp2_S5\\MinutaNutricional\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "48",
+                        "endOffsets": "60"
+                    },
+                    "to": {
+                        "startLines": "109",
+                        "startColumns": "4",
+                        "startOffsets": "6469",
+                        "endColumns": "48",
+                        "endOffsets": "6513"
+                    }
+                },
+                {
                     "source": "C:\\Users\\emeza\\.gradle\\caches\\transforms-4\\f73d870a5333dff0a86493e7cc1c82f7\\transformed\\lifecycle-viewmodel-release\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -74,6 +91,25 @@
                     }
                 },
                 {
+                    "source": "C:\\Ingenieria\\DSY2204\\Exp2_S5\\MinutaNutricional\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "63",
+                        "endLines": "3",
+                        "endColumns": "12",
+                        "endOffsets": "239"
+                    },
+                    "to": {
+                        "startLines": "218",
+                        "startColumns": "4",
+                        "startOffsets": "13719",
+                        "endLines": "220",
+                        "endColumns": "12",
+                        "endOffsets": "13829"
+                    }
+                },
+                {
                     "source": "C:\\Users\\emeza\\.gradle\\caches\\transforms-4\\f11c146a3b471caa695a3905c6da02c6\\transformed\\customview-poolingcontainer-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3",
@@ -91,23 +127,6 @@
                     }
                 },
                 {
-                    "source": "C:\\Ingenieria\\DSY2204\\Exp1_S1\\MinutaNutricional\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "16",
-                        "endColumns": "48",
-                        "endOffsets": "60"
-                    },
-                    "to": {
-                        "startLines": "109",
-                        "startColumns": "4",
-                        "startOffsets": "6469",
-                        "endColumns": "48",
-                        "endOffsets": "6513"
-                    }
-                },
-                {
                     "source": "C:\\Users\\emeza\\.gradle\\caches\\transforms-4\\5d7abad47beb7fbb3113d05dd0e8b664\\transformed\\lifecycle-runtime-release\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -122,25 +141,6 @@
                         "startOffsets": "6056",
                         "endColumns": "42",
                         "endOffsets": "6094"
-                    }
-                },
-                {
-                    "source": "C:\\Ingenieria\\DSY2204\\Exp1_S1\\MinutaNutricional\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "63",
-                        "endLines": "3",
-                        "endColumns": "12",
-                        "endOffsets": "239"
-                    },
-                    "to": {
-                        "startLines": "218",
-                        "startColumns": "4",
-                        "startOffsets": "13719",
-                        "endLines": "220",
-                        "endColumns": "12",
-                        "endOffsets": "13829"
                     }
                 },
                 {

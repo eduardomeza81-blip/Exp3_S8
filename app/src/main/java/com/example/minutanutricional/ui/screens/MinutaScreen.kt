@@ -42,7 +42,7 @@ fun MinutaScreen(
     Box(modifier = Modifier.fillMaxSize()) {
 
         Image(
-            painter = painterResource(id = R.drawable.portada),
+            painter = painterResource(id = R.drawable.registro),
             contentDescription = null,
             modifier = Modifier.fillMaxSize(),
             contentScale = ContentScale.Crop
