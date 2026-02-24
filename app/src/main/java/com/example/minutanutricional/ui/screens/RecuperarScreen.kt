@@ -21,8 +21,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import com.example.minutanutricional.R
-import com.example.minutanutricional.data.UsuariosData
+import com.example.minutanutricional.services.AuthService
 
+import android.util.Patterns
 @Composable
 fun RecuperarScreen(
     onBack: () -> Unit
@@ -66,16 +67,27 @@ fun RecuperarScreen(
             Spacer(modifier = Modifier.height(12.dp))
             Button(
                 onClick = {
-                    if(correo.isBlank()) {
+                    val c = correo.trim().lowercase()
+
+                    if (c.isBlank()) {
                         setMensaje("Ingresa un correo.")
                         return@Button
                     }
-                    val existe = UsuariosData.existeCorreo(correo)
-                    if(existe){
-                        setMensaje("Se enviaron instrucciones de recupación")
-                    }else{
-                        setMensaje("El correo no esta registrado")
+
+                    if (!Patterns.EMAIL_ADDRESS.matcher(c).matches()) {
+                        setMensaje("Correo no válido.")
+                        return@Button
                     }
+
+                    AuthService.reset(
+                        email = c,
+                        ok = {
+                            setMensaje("Si el correo existe, se enviaron instrucciones de recuperación.")
+                        },
+                        fail = { msg ->
+                            setMensaje(msg)
+                        }
+                    )
                 },
                 modifier = Modifier.fillMaxWidth()
             ) {

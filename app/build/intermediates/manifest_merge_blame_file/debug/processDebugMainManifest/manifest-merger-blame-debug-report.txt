@@ -9,147 +9,386 @@
 9        android:targetSdkVersion="34" />
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:2:5-67
-11-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:2:22-64
-12
-13    <permission
-13-->[androidx.core:core:1.13.1] C:\Users\emeza\.gradle\caches\transforms-4\2afe054eb450f3c2e302f9ddf11bee9d\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-14        android:name="com.example.minutanutricional.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.13.1] C:\Users\emeza\.gradle\caches\transforms-4\2afe054eb450f3c2e302f9ddf11bee9d\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
-15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.13.1] C:\Users\emeza\.gradle\caches\transforms-4\2afe054eb450f3c2e302f9ddf11bee9d\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
-16
-17    <uses-permission android:name="com.example.minutanutricional.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.13.1] C:\Users\emeza\.gradle\caches\transforms-4\2afe054eb450f3c2e302f9ddf11bee9d\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.13.1] C:\Users\emeza\.gradle\caches\transforms-4\2afe054eb450f3c2e302f9ddf11bee9d\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+11-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:5-79
+12-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:26:22-76
+13    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+13-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\emeza\.gradle\caches\transforms-4\2ad7a6a996e1464bc7a926286a03754c\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+13-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\emeza\.gradle\caches\transforms-4\2ad7a6a996e1464bc7a926286a03754c\transformed\recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+14
+15    <permission
+15-->[androidx.core:core:1.13.1] C:\Users\emeza\.gradle\caches\transforms-4\700fe1874c03d4c6a9e529aefd780496\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+16        android:name="com.example.minutanutricional.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.13.1] C:\Users\emeza\.gradle\caches\transforms-4\700fe1874c03d4c6a9e529aefd780496\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.13.1] C:\Users\emeza\.gradle\caches\transforms-4\700fe1874c03d4c6a9e529aefd780496\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 18
-19    <application
-19-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:4:5-19:19
-20        android:allowBackup="true"
-20-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:5:9-35
-21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.13.1] C:\Users\emeza\.gradle\caches\transforms-4\2afe054eb450f3c2e302f9ddf11bee9d\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
-22        android:debuggable="true"
-23        android:extractNativeLibs="false"
-24        android:icon="@mipmap/ic_launcher"
-24-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:7:9-43
-25        android:label="@string/app_name"
-25-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:6:9-41
-26        android:roundIcon="@mipmap/ic_launcher_round"
-26-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:8:9-54
-27        android:supportsRtl="true"
-27-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:9:9-35
-28        android:testOnly="true"
-29        android:theme="@style/Theme.MinutaNutricional" >
-29-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:10:9-55
-30        <activity
-30-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:11:9-18:20
-31            android:name="com.example.minutanutricional.MainActivity"
-31-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:12:13-41
-32            android:exported="true" >
-32-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:13:13-36
-33            <intent-filter>
-33-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:14:13-17:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:15:17-69
-34-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:15:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:16:17-77
-36-->C:\Ingenieria\DSY2204\Exp2_S5\MinutaNutricional\app\src\main\AndroidManifest.xml:16:27-74
-37            </intent-filter>
-38        </activity>
-39        <activity
-39-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\emeza\.gradle\caches\transforms-4\0b9541dfc9088d1c1d46136c048cb079\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:23:9-25:39
-40            android:name="androidx.activity.ComponentActivity"
-40-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\emeza\.gradle\caches\transforms-4\0b9541dfc9088d1c1d46136c048cb079\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:24:13-63
-41            android:exported="true" />
-41-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\emeza\.gradle\caches\transforms-4\0b9541dfc9088d1c1d46136c048cb079\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:25:13-36
-42        <activity
-42-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\emeza\.gradle\caches\transforms-4\0ce62b4e9d96f82ade4b377ddde98b2e\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
-43            android:name="androidx.compose.ui.tooling.PreviewActivity"
-43-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\emeza\.gradle\caches\transforms-4\0ce62b4e9d96f82ade4b377ddde98b2e\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
-44            android:exported="true" />
-44-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\emeza\.gradle\caches\transforms-4\0ce62b4e9d96f82ade4b377ddde98b2e\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
-45
-46        <provider
-46-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\8a58b36eb86ef235c4a48effe4d83bef\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-47            android:name="androidx.startup.InitializationProvider"
-47-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\8a58b36eb86ef235c4a48effe4d83bef\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
-48            android:authorities="com.example.minutanutricional.androidx-startup"
-48-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\8a58b36eb86ef235c4a48effe4d83bef\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
-49            android:exported="false" >
-49-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\8a58b36eb86ef235c4a48effe4d83bef\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
-50            <meta-data
-50-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\8a58b36eb86ef235c4a48effe4d83bef\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
-51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-51-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\8a58b36eb86ef235c4a48effe4d83bef\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
-52                android:value="androidx.startup" />
-52-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\8a58b36eb86ef235c4a48effe4d83bef\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
-53            <meta-data
-53-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\emeza\.gradle\caches\transforms-4\a6fc2958f3c0e21516d92e7e77aa172f\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
-54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-54-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\emeza\.gradle\caches\transforms-4\a6fc2958f3c0e21516d92e7e77aa172f\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
-55                android:value="androidx.startup" />
-55-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\emeza\.gradle\caches\transforms-4\a6fc2958f3c0e21516d92e7e77aa172f\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
-56            <meta-data
-56-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-57                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-57-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-58                android:value="androidx.startup" />
-58-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-59        </provider>
-60
-61        <uses-library
-61-->[androidx.window:window:1.0.0] C:\Users\emeza\.gradle\caches\transforms-4\7a6efd409b9b772b4e648d410806e7f8\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-62            android:name="androidx.window.extensions"
-62-->[androidx.window:window:1.0.0] C:\Users\emeza\.gradle\caches\transforms-4\7a6efd409b9b772b4e648d410806e7f8\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-63            android:required="false" />
-63-->[androidx.window:window:1.0.0] C:\Users\emeza\.gradle\caches\transforms-4\7a6efd409b9b772b4e648d410806e7f8\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-64        <uses-library
-64-->[androidx.window:window:1.0.0] C:\Users\emeza\.gradle\caches\transforms-4\7a6efd409b9b772b4e648d410806e7f8\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-65            android:name="androidx.window.sidecar"
-65-->[androidx.window:window:1.0.0] C:\Users\emeza\.gradle\caches\transforms-4\7a6efd409b9b772b4e648d410806e7f8\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-66            android:required="false" />
-66-->[androidx.window:window:1.0.0] C:\Users\emeza\.gradle\caches\transforms-4\7a6efd409b9b772b4e648d410806e7f8\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-67
-68        <receiver
-68-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-69            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-69-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-70            android:directBootAware="false"
-70-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-71            android:enabled="true"
-71-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-72            android:exported="true"
-72-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-73            android:permission="android.permission.DUMP" >
-73-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-74            <intent-filter>
-74-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-75                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-75-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-76            </intent-filter>
-77            <intent-filter>
-77-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-78                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-78-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-79            </intent-filter>
-80            <intent-filter>
-80-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-81                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-81-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-82            </intent-filter>
-83            <intent-filter>
-83-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-84                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-84-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\a8ceb7db9e542884b66bfcc33ba1e862\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-85            </intent-filter>
-86        </receiver>
-87    </application>
-88
-89</manifest>
+19    <uses-permission android:name="com.example.minutanutricional.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.13.1] C:\Users\emeza\.gradle\caches\transforms-4\700fe1874c03d4c6a9e529aefd780496\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.13.1] C:\Users\emeza\.gradle\caches\transforms-4\700fe1874c03d4c6a9e529aefd780496\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:6:5-35:19
+22        android:allowBackup="true"
+22-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:7:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.13.1] C:\Users\emeza\.gradle\caches\transforms-4\700fe1874c03d4c6a9e529aefd780496\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:8:9-43
+27        android:label="@string/app_name"
+27-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:9:9-41
+28        android:roundIcon="@mipmap/ic_launcher_round"
+28-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:10:9-54
+29        android:supportsRtl="true"
+29-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:11:9-35
+30        android:testOnly="true"
+31        android:theme="@style/Theme.MinutaNutricional" >
+31-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:12:9-55
+32        <service
+32-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:13:9-16:47
+33            android:name="com.example.minutanutricional.services.UserService"
+33-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:14:13-49
+34            android:enabled="true"
+34-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:15:13-35
+35            android:exported="true" />
+35-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:16:13-36
+36        <service
+36-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:17:9-20:39
+37            android:name="com.example.minutanutricional.services.DbService"
+37-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:18:13-47
+38            android:enabled="true"
+38-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:19:13-35
+39            android:exported="true" />
+39-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:20:13-36
+40        <service
+40-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:21:9-24:39
+41            android:name="com.example.minutanutricional.services.AuthService"
+41-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:22:13-49
+42            android:enabled="true"
+42-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:23:13-35
+43            android:exported="true" />
+43-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:24:13-36
+44
+45        <activity
+45-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:26:9-34:20
+46            android:name="com.example.minutanutricional.MainActivity"
+46-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:27:13-41
+47            android:exported="true" >
+47-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:28:13-36
+48            <intent-filter>
+48-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:29:13-33:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:30:17-69
+49-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:30:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:32:17-77
+51-->C:\Ingenieria\DSY2204\Exp3_S7\MinutaNutricional\MinutaNutricional\app\src\main\AndroidManifest.xml:32:27-74
+52            </intent-filter>
+53        </activity>
+54
+55        <service
+55-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\28bb76f303ffac0e2f78472de47f5c1d\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:8:9-14:19
+56            android:name="com.google.firebase.components.ComponentDiscoveryService"
+56-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\28bb76f303ffac0e2f78472de47f5c1d\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:9:13-84
+57            android:directBootAware="true"
+57-->[com.google.firebase:firebase-common:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\82c30e4ceebda84ae57da6fdcefeb09a\transformed\firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+58            android:exported="false" >
+58-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\28bb76f303ffac0e2f78472de47f5c1d\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:10:13-37
+59            <meta-data
+59-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\28bb76f303ffac0e2f78472de47f5c1d\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:11:13-13:85
+60                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
+60-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\28bb76f303ffac0e2f78472de47f5c1d\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:12:17-119
+61                android:value="com.google.firebase.components.ComponentRegistrar" />
+61-->[com.google.firebase:firebase-auth-ktx:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\28bb76f303ffac0e2f78472de47f5c1d\transformed\firebase-auth-ktx-23.0.0\AndroidManifest.xml:13:17-82
+62            <meta-data
+62-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:69:13-71:85
+63                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+63-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:70:17-109
+64                android:value="com.google.firebase.components.ComponentRegistrar" />
+64-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:71:17-82
+65            <meta-data
+65-->[com.google.firebase:firebase-database-ktx:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\d61e7efdeb9829a0032cc1d9321cba1c\transformed\firebase-database-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+66                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseLegacyRegistrar"
+66-->[com.google.firebase:firebase-database-ktx:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\d61e7efdeb9829a0032cc1d9321cba1c\transformed\firebase-database-ktx-21.0.0\AndroidManifest.xml:13:17-127
+67                android:value="com.google.firebase.components.ComponentRegistrar" />
+67-->[com.google.firebase:firebase-database-ktx:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\d61e7efdeb9829a0032cc1d9321cba1c\transformed\firebase-database-ktx-21.0.0\AndroidManifest.xml:14:17-82
+68            <meta-data
+68-->[com.google.firebase:firebase-database:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\0a5c1c4a2300b4046e13b7ad2f6ece39\transformed\firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
+69                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+69-->[com.google.firebase:firebase-database:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\0a5c1c4a2300b4046e13b7ad2f6ece39\transformed\firebase-database-21.0.0\AndroidManifest.xml:30:17-120
+70                android:value="com.google.firebase.components.ComponentRegistrar" />
+70-->[com.google.firebase:firebase-database:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\0a5c1c4a2300b4046e13b7ad2f6ece39\transformed\firebase-database-21.0.0\AndroidManifest.xml:31:17-82
+71            <meta-data
+71-->[com.google.firebase:firebase-database:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\0a5c1c4a2300b4046e13b7ad2f6ece39\transformed\firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
+72                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+72-->[com.google.firebase:firebase-database:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\0a5c1c4a2300b4046e13b7ad2f6ece39\transformed\firebase-database-21.0.0\AndroidManifest.xml:33:17-109
+73                android:value="com.google.firebase.components.ComponentRegistrar" />
+73-->[com.google.firebase:firebase-database:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\0a5c1c4a2300b4046e13b7ad2f6ece39\transformed\firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+74            <meta-data
+74-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\52d0f7dc86e6efd4be1271e1792166b3\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+75                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+75-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\52d0f7dc86e6efd4be1271e1792166b3\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+76                android:value="com.google.firebase.components.ComponentRegistrar" />
+76-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\52d0f7dc86e6efd4be1271e1792166b3\transformed\firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+77            <meta-data
+77-->[com.google.firebase:firebase-common:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\82c30e4ceebda84ae57da6fdcefeb09a\transformed\firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+78                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+78-->[com.google.firebase:firebase-common:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\82c30e4ceebda84ae57da6fdcefeb09a\transformed\firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+79                android:value="com.google.firebase.components.ComponentRegistrar" />
+79-->[com.google.firebase:firebase-common:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\82c30e4ceebda84ae57da6fdcefeb09a\transformed\firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+80        </service>
+81
+82        <activity
+82-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:29:9-46:20
+83            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+83-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:30:13-80
+84            android:excludeFromRecents="true"
+84-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:31:13-46
+85            android:exported="true"
+85-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:32:13-36
+86            android:launchMode="singleTask"
+86-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:33:13-44
+87            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+87-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:34:13-72
+88            <intent-filter>
+88-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:35:13-45:29
+89                <action android:name="android.intent.action.VIEW" />
+89-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
+89-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
+90
+91                <category android:name="android.intent.category.DEFAULT" />
+91-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
+91-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
+92                <category android:name="android.intent.category.BROWSABLE" />
+92-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
+92-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+93
+94                <data
+94-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
+95                    android:host="firebase.auth"
+95-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
+96                    android:path="/"
+96-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
+97                    android:scheme="genericidp" />
+97-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
+98            </intent-filter>
+99        </activity>
+100        <activity
+100-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:47:9-64:20
+101            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+101-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:48:13-79
+102            android:excludeFromRecents="true"
+102-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:49:13-46
+103            android:exported="true"
+103-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:50:13-36
+104            android:launchMode="singleTask"
+104-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:51:13-44
+105            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+105-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:52:13-72
+106            <intent-filter>
+106-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:53:13-63:29
+107                <action android:name="android.intent.action.VIEW" />
+107-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:17-69
+107-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:36:25-66
+108
+109                <category android:name="android.intent.category.DEFAULT" />
+109-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:17-76
+109-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:38:27-73
+110                <category android:name="android.intent.category.BROWSABLE" />
+110-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:17-78
+110-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:39:27-75
+111
+112                <data
+112-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:41:17-44:51
+113                    android:host="firebase.auth"
+113-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:42:21-49
+114                    android:path="/"
+114-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:43:21-37
+115                    android:scheme="recaptcha" />
+115-->[com.google.firebase:firebase-auth:23.0.0] C:\Users\emeza\.gradle\caches\transforms-4\657a3e940190a2056cea0f3a5132f096\transformed\firebase-auth-23.0.0\AndroidManifest.xml:44:21-48
+116            </intent-filter>
+117        </activity>
+118
+119        <provider
+119-->[com.google.firebase:firebase-common:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\82c30e4ceebda84ae57da6fdcefeb09a\transformed\firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+120            android:name="com.google.firebase.provider.FirebaseInitProvider"
+120-->[com.google.firebase:firebase-common:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\82c30e4ceebda84ae57da6fdcefeb09a\transformed\firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+121            android:authorities="com.example.minutanutricional.firebaseinitprovider"
+121-->[com.google.firebase:firebase-common:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\82c30e4ceebda84ae57da6fdcefeb09a\transformed\firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+122            android:directBootAware="true"
+122-->[com.google.firebase:firebase-common:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\82c30e4ceebda84ae57da6fdcefeb09a\transformed\firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+123            android:exported="false"
+123-->[com.google.firebase:firebase-common:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\82c30e4ceebda84ae57da6fdcefeb09a\transformed\firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+124            android:initOrder="100" />
+124-->[com.google.firebase:firebase-common:21.0.0] C:\Users\emeza\.gradle\caches\transforms-4\82c30e4ceebda84ae57da6fdcefeb09a\transformed\firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+125
+126        <service
+126-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+127            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+127-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+128            android:enabled="true"
+128-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+129            android:exported="false" >
+129-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+130            <meta-data
+130-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+131                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+131-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+132                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+132-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+133        </service>
+134
+135        <activity
+135-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+136            android:name="androidx.credentials.playservices.HiddenActivity"
+136-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+137            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+137-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+138            android:enabled="true"
+138-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+139            android:exported="false"
+139-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+140            android:fitsSystemWindows="true"
+140-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+141            android:theme="@style/Theme.Hidden" >
+141-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\emeza\.gradle\caches\transforms-4\2f9d6b5304c8eaf935e9b36326bf34ee\transformed\credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+142        </activity>
+143        <activity
+143-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\emeza\.gradle\caches\transforms-4\f4306e4eb9e4a8556b2ea8c20409653d\transformed\play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+144            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+144-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\emeza\.gradle\caches\transforms-4\f4306e4eb9e4a8556b2ea8c20409653d\transformed\play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+145            android:excludeFromRecents="true"
+145-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\emeza\.gradle\caches\transforms-4\f4306e4eb9e4a8556b2ea8c20409653d\transformed\play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+146            android:exported="false"
+146-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\emeza\.gradle\caches\transforms-4\f4306e4eb9e4a8556b2ea8c20409653d\transformed\play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+147            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+147-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\emeza\.gradle\caches\transforms-4\f4306e4eb9e4a8556b2ea8c20409653d\transformed\play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+148        <!--
+149            Service handling Google Sign-In user revocation. For apps that do not integrate with
+150            Google Sign-In, this service will never be started.
+151        -->
+152        <service
+152-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\emeza\.gradle\caches\transforms-4\f4306e4eb9e4a8556b2ea8c20409653d\transformed\play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+153            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+153-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\emeza\.gradle\caches\transforms-4\f4306e4eb9e4a8556b2ea8c20409653d\transformed\play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+154            android:exported="true"
+154-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\emeza\.gradle\caches\transforms-4\f4306e4eb9e4a8556b2ea8c20409653d\transformed\play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+155            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+155-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\emeza\.gradle\caches\transforms-4\f4306e4eb9e4a8556b2ea8c20409653d\transformed\play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+156            android:visibleToInstantApps="true" />
+156-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\emeza\.gradle\caches\transforms-4\f4306e4eb9e4a8556b2ea8c20409653d\transformed\play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+157
+158        <activity
+158-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\emeza\.gradle\caches\transforms-4\5047880db707bf31ff38fe5f4d64aaf5\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+159            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+159-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\emeza\.gradle\caches\transforms-4\5047880db707bf31ff38fe5f4d64aaf5\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+160            android:exported="false"
+160-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\emeza\.gradle\caches\transforms-4\5047880db707bf31ff38fe5f4d64aaf5\transformed\play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+161            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+161-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\emeza\.gradle\caches\transforms-4\5047880db707bf31ff38fe5f4d64aaf5\transformed\play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+162        <activity
+162-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\emeza\.gradle\caches\transforms-4\b1f6af009e4350c574fd390532fdf43b\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+163            android:name="androidx.compose.ui.tooling.PreviewActivity"
+163-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\emeza\.gradle\caches\transforms-4\b1f6af009e4350c574fd390532fdf43b\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+164            android:exported="true" />
+164-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\emeza\.gradle\caches\transforms-4\b1f6af009e4350c574fd390532fdf43b\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+165        <activity
+165-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\emeza\.gradle\caches\transforms-4\de6cd00d8afad5fa3eb8ba2d0ad788b0\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:23:9-25:39
+166            android:name="androidx.activity.ComponentActivity"
+166-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\emeza\.gradle\caches\transforms-4\de6cd00d8afad5fa3eb8ba2d0ad788b0\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:24:13-63
+167            android:exported="true" />
+167-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\emeza\.gradle\caches\transforms-4\de6cd00d8afad5fa3eb8ba2d0ad788b0\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:25:13-36
+168
+169        <provider
+169-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\394b67896c95b3075c416c3300917d73\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+170            android:name="androidx.startup.InitializationProvider"
+170-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\394b67896c95b3075c416c3300917d73\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+171            android:authorities="com.example.minutanutricional.androidx-startup"
+171-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\394b67896c95b3075c416c3300917d73\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+172            android:exported="false" >
+172-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\394b67896c95b3075c416c3300917d73\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+173            <meta-data
+173-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\394b67896c95b3075c416c3300917d73\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+174                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+174-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\394b67896c95b3075c416c3300917d73\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+175                android:value="androidx.startup" />
+175-->[androidx.emoji2:emoji2:1.3.0] C:\Users\emeza\.gradle\caches\transforms-4\394b67896c95b3075c416c3300917d73\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+176            <meta-data
+176-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\emeza\.gradle\caches\transforms-4\02ea96680833c1c4be6989783991c598\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
+177                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+177-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\emeza\.gradle\caches\transforms-4\02ea96680833c1c4be6989783991c598\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
+178                android:value="androidx.startup" />
+178-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\emeza\.gradle\caches\transforms-4\02ea96680833c1c4be6989783991c598\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
+179            <meta-data
+179-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+180                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+180-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+181                android:value="androidx.startup" />
+181-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+182        </provider>
+183
+184        <uses-library
+184-->[androidx.window:window:1.0.0] C:\Users\emeza\.gradle\caches\transforms-4\1bdec18a45542d532bfb0887ea21c31c\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+185            android:name="androidx.window.extensions"
+185-->[androidx.window:window:1.0.0] C:\Users\emeza\.gradle\caches\transforms-4\1bdec18a45542d532bfb0887ea21c31c\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+186            android:required="false" />
+186-->[androidx.window:window:1.0.0] C:\Users\emeza\.gradle\caches\transforms-4\1bdec18a45542d532bfb0887ea21c31c\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+187        <uses-library
+187-->[androidx.window:window:1.0.0] C:\Users\emeza\.gradle\caches\transforms-4\1bdec18a45542d532bfb0887ea21c31c\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+188            android:name="androidx.window.sidecar"
+188-->[androidx.window:window:1.0.0] C:\Users\emeza\.gradle\caches\transforms-4\1bdec18a45542d532bfb0887ea21c31c\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+189            android:required="false" />
+189-->[androidx.window:window:1.0.0] C:\Users\emeza\.gradle\caches\transforms-4\1bdec18a45542d532bfb0887ea21c31c\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+190
+191        <meta-data
+191-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\emeza\.gradle\caches\transforms-4\aabbd36d0fb3f2ae681238ea0646a198\transformed\play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+192            android:name="com.google.android.gms.version"
+192-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\emeza\.gradle\caches\transforms-4\aabbd36d0fb3f2ae681238ea0646a198\transformed\play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+193            android:value="@integer/google_play_services_version" />
+193-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\emeza\.gradle\caches\transforms-4\aabbd36d0fb3f2ae681238ea0646a198\transformed\play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+194
+195        <receiver
+195-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+196            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+196-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+197            android:directBootAware="false"
+197-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+198            android:enabled="true"
+198-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+199            android:exported="true"
+199-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+200            android:permission="android.permission.DUMP" >
+200-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+201            <intent-filter>
+201-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+202                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+202-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+203            </intent-filter>
+204            <intent-filter>
+204-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+205                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+205-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+206            </intent-filter>
+207            <intent-filter>
+207-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+208                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+208-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+209            </intent-filter>
+210            <intent-filter>
+210-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+211                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+211-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\emeza\.gradle\caches\transforms-4\fea6e60598dd0de4d3763e203cfcd6cb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+212            </intent-filter>
+213        </receiver>
+214    </application>
+215
+216</manifest>

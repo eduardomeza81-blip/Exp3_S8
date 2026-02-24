@@ -30,12 +30,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.minutanutricional.R
-import com.example.minutanutricional.data.UsuariosData
 import com.example.minutanutricional.model.Usuario
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults
 import android.util.Patterns
+import com.example.minutanutricional.services.AuthService
+import com.example.minutanutricional.services.UserService
 
 @Composable
 fun RegistroScreen(
@@ -249,16 +250,40 @@ fun RegistroScreen(
                         return@Button
                     }
                     if (p.isBlank()) { errorMsg = "Ingresa una contraseña."; return@Button }
-                    if (p.length < 4) { errorMsg = "La contraseña debe tener al menos 4 caracteres."; return@Button }
 
-                    // Límite de 5 usuarios
-                    val ok = UsuariosData.agregarUsuario(Usuario(correo = c, password = p))
-                    if (ok) {
-                        errorMsg = ""
-                        onCrearCuenta()
-                    } else {
-                        errorMsg = "Ya se registraron 5 usuarios. No puedes crear más."
-                    }
+                    // Firebase Auth exige mínimo 6 caracteres
+                    if (p.length < 6) { errorMsg = "La contraseña debe tener al menos 6 caracteres."; return@Button }
+
+                    AuthService.register(
+                        email = c,
+                        pass = p,
+                        ok = { uid ->
+                            val perfil = Usuario(
+                                uid = uid,
+                                nombre = n,
+                                correo = c,
+                                objetivo = objetivoSeleccionado,
+                                nivelAsistencia = nivelActividad,
+                                altoContraste = sinAzucar,
+                                textoGrande = sinLactosa,
+                                interfazSimplificada = vegetariano
+                            )
+
+                            UserService.saveProfile(
+                                user = perfil,
+                                onSuccess = {
+                                    errorMsg = ""
+                                    onCrearCuenta()
+                                },
+                                onError = { msg ->
+                                    errorMsg = msg
+                                }
+                            )
+                        },
+                        fail = { msg ->
+                            errorMsg = msg
+                        }
+                    )
                 },
                 modifier = Modifier.fillMaxWidth()
             ) {

@@ -27,7 +27,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import com.example.minutanutricional.R
-import com.example.minutanutricional.data.UsuariosData
+import com.example.minutanutricional.services.AuthService
+import android.util.Patterns
 
 @Composable
 fun LoginScreen(
@@ -109,21 +110,40 @@ fun LoginScreen(
                     }
                     Button(
                         onClick = {
-                            val correoLimpio = email.trim()
-                            //val ok = UsuariosData.validarUsuario(correo = email, password=password)
-                            if (UsuariosData.cantidadUsuarios()==0){
-                                setError("Primero crea una cuenta en Registro.")
+                            val correoLimpio = email.trim().lowercase()
+                            val p = password
+
+                            if (correoLimpio.isEmpty()) {
+                                setError("Ingresa tu correo.")
                                 return@Button
                             }
-                            val ok = UsuariosData.validarUsuario(correo = correoLimpio, password=password)
-                            if (ok){
-                                setError("")
-                                onLogin()
-                            }else{
-                                setError("Credenciales inválidas")
+
+                            if (!Patterns.EMAIL_ADDRESS.matcher(correoLimpio).matches()) {
+                                setError("Correo no válido.")
+                                return@Button
                             }
-                        }, modifier = Modifier.fillMaxWidth(),
-                        colors = ButtonDefaults.buttonColors(Color(0xFF6D4FB3), contentColor = Color.White
+
+                            if (p.isBlank()) {
+                                setError("Ingresa tu contraseña.")
+                                return@Button
+                            }
+
+                            AuthService.login(
+                                email = correoLimpio,
+                                pass = p,
+                                ok = {
+                                    setError("")
+                                    onLogin()
+                                },
+                                fail = { msg ->
+                                    setError(msg)
+                                }
+                            )
+                        },
+                        modifier = Modifier.fillMaxWidth(),
+                        colors = ButtonDefaults.buttonColors(
+                            Color(0xFF6D4FB3),
+                            contentColor = Color.White
                         )
                     ) {
                         Text("Ingresar")

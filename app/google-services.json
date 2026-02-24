@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "42371045346",
+    "project_id": "minutanutricional-ff63d",
+    "storage_bucket": "minutanutricional-ff63d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42371045346:android:9ff96b692005535dfc8bbb",
+        "android_client_info": {
+          "package_name": "com.example.minutanutricional"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSV8vdcDAbZ9tf5L6Sh01_Z7HsqV-QBjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
