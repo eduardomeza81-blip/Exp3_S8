@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.minutanutricional.app-mergeReleaseResources-3:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Ingenieria\\DSY2204\\Exp3_S8\\MinutaNutricional\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "63",
+                        "endLines": "2",
+                        "endColumns": "12",
+                        "endOffsets": "158"
+                    },
+                    "to": {
+                        "startLines": "9",
+                        "startColumns": "4",
+                        "startOffsets": "687",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "782"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\emeza\\.gradle\\caches\\transforms-4\\180ded931106189b64c99ba05ffc3b45\\transformed\\appcompat-1.7.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,11",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,787",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,871"
+                    }
+                }
+            ]
+        }
+    ]
+}

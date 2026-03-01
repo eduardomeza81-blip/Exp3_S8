@@ -29,6 +29,9 @@ import androidx.compose.ui.res.painterResource
 import com.example.minutanutricional.R
 import com.example.minutanutricional.services.AuthService
 import android.util.Patterns
+import androidx.compose.foundation.background
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun LoginScreen(
@@ -61,8 +64,15 @@ fun LoginScreen(
         {
             Text(
                 text = "TeAcompaño",
-                color = Color.DarkGray,
-                style = MaterialTheme.typography.headlineLarge
+                style = MaterialTheme.typography.headlineLarge,
+                color = MaterialTheme.colorScheme.onSurface,
+                modifier = Modifier
+                    .padding(bottom = 12.dp)
+                    .background(
+                        color = MaterialTheme.colorScheme.surface.copy(alpha = 0.75f),
+                        shape = RoundedCornerShape(12.dp)
+                    )
+                    .padding(horizontal = 12.dp, vertical = 6.dp)
             )
             Spacer(modifier = Modifier.height(16.dp))
 
@@ -140,13 +150,15 @@ fun LoginScreen(
                                 }
                             )
                         },
-                        modifier = Modifier.fillMaxWidth(),
+                        modifier = Modifier.fillMaxWidth().height(56.dp),
+                        shape = RoundedCornerShape(16.dp),
+
                         colors = ButtonDefaults.buttonColors(
                             Color(0xFF6D4FB3),
                             contentColor = Color.White
                         )
                     ) {
-                        Text("Ingresar")
+                        Text("Ingresar", fontSize = 18.sp)
                     }
                     Spacer(modifier = Modifier.height(12.dp))
                     Text(
